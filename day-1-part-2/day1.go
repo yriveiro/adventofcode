@@ -24,6 +24,8 @@ func main() {
 		fmt.Println(err)
 	}
 
+	defer f.Close()
+
 	fs := bufio.NewScanner(f)
 
 	fs.Split(bufio.ScanLines)
@@ -47,8 +49,6 @@ func main() {
 
 	// check last entry, as no empty line is emmited
 	compare(top, acc)
-
-	f.Close()
 
 	fmt.Println(top)
 	fmt.Println("The total calories of the top 3 elfs are:", func(input []int) int {

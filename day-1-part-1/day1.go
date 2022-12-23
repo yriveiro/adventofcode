@@ -18,6 +18,8 @@ func main() {
 		fmt.Println(err)
 	}
 
+	defer f.Close()
+
 	fs := bufio.NewScanner(f)
 
 	fs.Split(bufio.ScanLines)
@@ -46,6 +48,5 @@ func main() {
 		top = acc
 	}
 
-	f.Close()
 	fmt.Printf("The elf with most calories has '%d'", top)
 }
