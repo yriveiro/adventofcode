@@ -41,6 +41,11 @@ func main() {
 		}
 	}
 
+	// check last entry, as no empty line is emmited
+	if acc > top {
+		top = acc
+	}
+
 	f.Close()
 	fmt.Printf("The elf with most calories has '%d'", top)
 }
