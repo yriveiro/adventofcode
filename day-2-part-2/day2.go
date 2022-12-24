@@ -12,7 +12,7 @@ import (
 // C -> sccisors
 //
 // responses:
-// X -> Loser
+// X -> Lose
 // Y -> Draw
 // Z -> Win
 
