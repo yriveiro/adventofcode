@@ -1,2 +1,3 @@
-# adventofcode2022
-Exercices of Avent of Code 2022
+# Advent Of Code
+
+Exercice of Avent of Code
